@@ -10,8 +10,8 @@ for (int i = 0; i < rows; i++)
 {
     for (int j = 0; j < columns; j++)
     {
-        array[i,j] = array[i,j] = Math.Round(new Random().NextDouble()+new Random ().Next(-10,11),2);
-        Console.Write(array[i,j]+"\t");
+        array[i,j] = array[i,j] = new Random().Next(-100,101)/10.0;
+        Console.Write(Math.Round(array[i,j],1) +"\t");
     }
     Console.WriteLine();
 }
