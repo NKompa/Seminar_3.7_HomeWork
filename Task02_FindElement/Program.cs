@@ -17,10 +17,6 @@ Console.WriteLine("Введите номер столбца: ");
 int column = Convert.ToInt32(Console.ReadLine());
 
 if(row<=array.GetLength(0) && column<=array.GetLength(1))
-{
     Console.WriteLine($"Искомый элемент: {array[row-1,column-1]}.");
-}
 else
-{
     Console.WriteLine("Искомый элемент не существует.");
-}
